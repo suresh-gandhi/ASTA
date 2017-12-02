@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: The shadow is not coming as in the document of the images i.e. see some background color -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.asta.MainActivity">
+
+    <!-- TODO: Shall we work with base linear or relative layout -->
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/topDetailsMainActivity"
+        android:layout_margin="8dp">
+
+        <!-- TODO:
+            1. Dont hard code the string
+            2. Rectifiy the code for multiple lines.
+            3. Dont hard code the size of the text.
+            4. If possible apply a theme or so.
+            5. Add the necessary ids if required.
+        -->
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="RESHMA DEVI"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:layout_marginBottom="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="1/3/2014 - 24/3/2014"
+            android:layout_marginTop="1dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/variousIconsPathAreaMainActivity"
+        android:layout_below="@id/topDetailsMainActivity"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp">
+
+        <!-- TODO: The issue of height and width needs to be sorted for consistency across all the devices -->
+        <!-- TODO: The text shouldn't be hardcoded -->
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/everyonesIconAreaMainActivity"
+            >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/ic_everyone"
+            android:id="@+id/everyoneIconMainActivity"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Everyone's performance"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/calenderIconAreaMainActivity"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic_calendar_icon_only"
+                android:id="@+id/calenderIconMainActivity"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Calender"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <!-- TODO: 5 needs to be bold out for the past 5 months performance -->
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/histoicalIconAreaMainActivity"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic_historical"
+                android:id="@+id/historicalIconMainActivity"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Past 5 months performance"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

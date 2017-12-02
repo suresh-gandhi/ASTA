@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.asta.HistoricalActivity">
+
+    <!-- TODO: Dont hard code the strings here -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/topAreaHistoricalActivity"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Number of Visits"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:layout_marginBottom="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="1/3/2014 - 24/3/2014"
+            android:layout_marginTop="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:id="@+id/bottomAreaHistoricalActivity"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp">
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="60"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/historicalChart"
+            android:layout_width="0dp"
+            android:layout_weight="900"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
